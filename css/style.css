@@ -1,0 +1,55 @@
+@media screen and (max-width: 800px) {
+    /*1px-800px*/
+    .first-div {
+        width: 100%;
+        background-color: red;
+        height: 100px;
+    }
+
+    .second-div {
+        width: 100%;
+        background-color: blue;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    /*801px-801px*/
+    .first-div {
+        width: 50%;
+        float: left;
+        background-color: red;
+        height: 100px;
+    }
+
+    .second-div {
+        width: 50%;
+        float: left;
+        background-color: blue;
+        height: 100px;
+    }
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+table {
+
+}
+
+div {
+
+}
+
+.menu-container {
+    width: 60%;
+    margin: 0 auto;
+    background-color: red;
+    padding: 20px 10px;
+    margin-top: 100px;
+}
+
+#menu-container-id {
+    height: 100px;
+}

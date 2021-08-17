@@ -2,32 +2,9 @@
     <head>
         <!--        Internal CSS-->
         <title>CSE-3532</title>
-        <style>
-            a {
-                text-decoration: none;
-                color: white;
-            }
-
-            table {
-
-            }
-
-            div {
-
-            }
-
-            .menu-container {
-                width: 60%;
-                margin: 0 auto;
-                background-color: red;
-                padding: 20px 10px;
-                margin-top: 100px;
-            }
-
-            #menu-container-id {
-                height: 100px;
-            }
-        </style>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
     </head>
     <body>
     <header>
@@ -108,7 +85,8 @@
                 <table>
                     <tr>
                         <td>Student Name</td>
-                        <td><input placeholder="Enter the student name" type="text" id="studentName" name="studentName">
+                        <td><input placeholder="Enter the student name" required type="text" id="studentName"
+                                   name="studentName">
                         </td>
                     </tr>
                     <tr>
@@ -116,18 +94,81 @@
                             Matric No
                         </td>
                         <td>
-                            <input placeholder="Enter the matric no" type="text" name="matricNo" id="matricNo">
+                            <input placeholder="Enter the matric no" required type="text" name="matricNo" id="matricNo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Department
+                        </td>
+                        <td>
+                            <select id="department" name="department">
+                                <option disabled value="" required selected>Select Department</option>
+                                <option>CSE</option>
+                                <option>ME</option>
+                                <option>EEE</option>
+                                <option>CE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Email
+                        </td>
+                        <td>
+                            <input required placeholder="Enter email" type="email" name="email" id="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Password
+                        </td>
+                        <td>
+                            <input required placeholder="Enter password" type="password" name="password" id="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Salary
+                        </td>
+                        <td>
+                            <input placeholder="Enter salary" type="number" name="salary" id="salary">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Gender
+                        </td>
+                        <td>
+                            <input type="radio" name="male" id="male">Male
+                            <input type="radio" name="female" id="female">Female
                         </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>
-                            <input type="submit" name="formSubmit">
+                            <input class="btn btn-primary" type="submit" name="formSubmit">
                         </td>
                     </tr>
                 </table>
             </form>
         </div>
+        <div class="media-query">
+            <div class="first-div">
+                <p style="text-align: justify">
+                    Download Bootstrap to get the compiled CSS and JavaScript, source code, or include it with your
+                    favorite package managers like npm, RubyGems, and more
+                </p>
+            </div>
+            <div class="second-div">
+                <p style="text-align: justify">
+                    Download Bootstrap to get the compiled CSS and JavaScript, source code, or include it with your
+                    favorite package managers like npm, RubyGems, and more
+                </p>
+            </div>
+
+        </div>
+
     </section>
     <section>
         <footer>
