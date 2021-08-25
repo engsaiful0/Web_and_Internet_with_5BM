@@ -1,0 +1,45 @@
+<html>
+<head></head>
+<body>
+<script>
+    function summantion()
+    {
+        var firstNumber=document.getElementById('firstNumber').value;
+        var secondNumber=document.getElementById('secondNumber').value;
+
+        var thirdNumber=prompt("Enter a number");
+
+        var result=Number(firstNumber)+Number(secondNumber)+Number(thirdNumber);
+        document.getElementById('result').value=result;
+        //document.write(result);
+        //alert("result="+result);
+    }
+</script>
+<table>
+    <tr>
+        <td>First Number</td>
+        <td>
+            <input name="firstNumber" id="firstNumber">
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Second Number</td>
+        <td> <input name="secondNumber" id="secondNumber"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Result</td>
+        <td> <input name="result" id="result"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <input onclick="summantion()" type="button" value="Save">
+        </td>
+        <td></td>
+    </tr>
+</table>
+</body>
+</html>
